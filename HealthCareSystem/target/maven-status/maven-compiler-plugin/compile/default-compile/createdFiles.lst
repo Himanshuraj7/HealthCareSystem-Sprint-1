@@ -1,7 +1,9 @@
 com\capgemini\healthcaresystem\dto\Appointment.class
 com\capgemini\healthcaresystem\dto\User.class
+com\capgemini\healthcaresystem\ui\RegisterUser.class
+com\capgemini\healthcaresystem\exceptions\InvalidUserData.class
 com\capgemini\healthcaresystem\dto\DiagnosticCenter.class
-com\capgemini\healthcaresystem\exceptions\MyException.class
+com\capgemini\healthcaresystem\util\CenterAndTestRepository.class
 com\capgemini\healthcaresystem\dao\RegisterUserDao.class
 com\capgemini\healthcaresystem\util\UserRepository.class
 com\capgemini\healthcaresystem\dto\Test.class
