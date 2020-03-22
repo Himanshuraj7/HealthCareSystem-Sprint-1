@@ -8,7 +8,7 @@ import com.capgemini.healthcaresystem.dao.RegisterUserDao;
 import com.capgemini.healthcaresystem.dto.User;
 import com.capgemini.healthcaresystem.exceptions.InvalidUserData;
 
-public class RegisterUserService {
+public class RegisterUserService implements RegisterUserServiceInterface{
 	Scanner scanner=new Scanner(System.in);
 
 	//Password Matcher
@@ -16,7 +16,7 @@ public class RegisterUserService {
     static Matcher matcher;
     static String PASSWORD_PATTERN = "((?=.*[a-z])(?=.*\\d)(?=.*[A-Z])(?=.*[@#$%!]).{8,14})";
     
-    public static boolean validatePassword(String password) {
+    public boolean validatePassword(String password) {
     	pattern = Pattern.compile(PASSWORD_PATTERN);
         matcher = pattern.matcher(password);
         return matcher.matches();
